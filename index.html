@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home jido</title>
+    <link rel="stylesheet" href="static\style.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent body from scrolling */
+        }
+
+        .main {
+            background-image: url('static/homeimg.jpg'); /* Replace with your image */
+            
+            background-attachment: fixed; /* Keeps the background fixed */
+            background-size: cover; /* Ensures the image covers the area */
+            position: absolute;
+            margin-top:0px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1; /* Places it behind the content */
+        }
+
+        .header__navigation {
+            position: relative;
+            z-index: 1; /* Keeps navigation above background */
+            color: white;
+            background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+            border: 1px solid bisque;
+            height: 150px;
+         }
+         h1{
+            font-size: 40px;
+            margin: 0;
+            padding: 0;
+            margin-top: 35px;
+            margin-left: 20px;
+            max-width:  200px;
+         }
+         ul{
+        display: flex;
+        flex-direction: row;
+        margin-left: 800px;
+        text-decoration: none;
+        
+         }
+         a{
+            text-decoration: none;
+            color: white;
+         }
+         a:hover{
+            background-color: blue;
+         }
+         .header__navitem{
+            background-color: #2196F3;
+            border: 2px solid wheat;
+            list-style-type: none;
+            padding: 6px;
+            margin-right: 20px;
+            font-size: large;
+            }
+    
+
+        .main {
+            position: relative;
+            z-index: 1; /* Keeps main content above background */
+            padding: 20px;
+            color: white;
+            text-align: center;
+            height: 200vh; /* Makes the content tall enough to allow scrolling */
+        }
+
+        .content {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.7); /* Optional: button background */
+            border: none;
+            color: white;
+            cursor: pointer;
+            width: 100px;
+            height: 25px;
+        
+        }
+
+        .content  {
+            color: white;
+            text-decoration: none;
+            margin-top: 200px;
+           
+        }
+        
+
+        footer {
+            position: relative;
+            z-index: 1; /* Keeps footer above background */
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <section class="header__navigation">
+        <h1 class="header__webname"><b>JIDO-TICS</b></h1>
+        <ul>
+            <li class="header__navitem"><a href="#">Home</a></li>
+            <li class="header__navitem"><a href="Services.html">OurServices</a></li>
+            <li class="header__navitem"><a href="aboutus.html">AboutUs</a></li>
+            <li class="header__navitem"><a href="contactus.html">ContactUs</a></li>
+        </ul>    
+    </section>
+
+    <main class="main">
+        <button class="content"><a href="D:\jidoticsdemoweb\Services.html">Services</a></button>
+        <button class="content"><a href="D:\jidoticsdemoweb\aboutus.html">LearnMore</a></button>
+    </main>
+    
+    <footer>
+        <p>© 2024 JIDO-TICS. All rights reserved.</p>
+    </footer>
+</body>
+</html>
